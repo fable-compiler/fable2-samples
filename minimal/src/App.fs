@@ -29,7 +29,7 @@ let update (msg:Msg) (model:Model) =
 
 // VIEW (rendered with React)
 
-let view model dispatch =
+let view (model:Model) dispatch =
 
   div []
       [ button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ]
