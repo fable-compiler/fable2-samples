@@ -1,11 +1,12 @@
 # Fable 2 Minimal App
 
-This is a simple Fable 2 app including an [Elmish](https://elmish.github.io/) counter with as little configuration as possible. If you want to see a more complex app, check [the Fulma demo](https://github.com/MangelMaxime/fulma-demo).
+This is a simple Fable 2 app including an [Elmish](https://elmish.github.io/) counter with as little configuration as possible. If you want to see a more complex app including commonly used F# tools like Paket or Fake, check [the Fulma demo](https://github.com/MangelMaxime/fulma-demo).
 
 ## Requirements
 
 * [dotnet SDK](https://www.microsoft.com/net/download/core) 2.0 or higher
 * [node.js](https://nodejs.org) with [npm](https://www.npmjs.com/)
+* An F# editor like Visual Studio, Visual Studio Code with [Ionide](http://ionide.io/) or [JetBrains Rider](https://www.jetbrains.com/rider/).
 
 ## Building and running the app
 
@@ -24,7 +25,7 @@ JS dependencies are declared in `package.json`, while `package-lock.json` is a l
 
 ### Webpack
 
-[Webpack](https://webpack.js.org) is a JS bundler with extensions, like a static dev server that enables hot reloading on code changes. Fable interacts with Webpack through the `fable-loader`. Configuration for Webpack is defined in the `webpack.config.js` file.
+[Webpack](https://webpack.js.org) is a JS bundler with extensions, like a static dev server that enables hot reloading on code changes. Fable interacts with Webpack through the `fable-loader`. Configuration for Webpack is defined in the `webpack.config.js` file. Note this sample only includes basic Webpack configuration for development mode, if you want to see a more comprehensive configuration check the [Fable webpack-config-template](https://github.com/fable-compiler/webpack-config-template/blob/master/webpack.config.js).
 
 ### F#
 
