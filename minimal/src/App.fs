@@ -2,7 +2,7 @@ module App
 
 (**
  The famous Increment/Decrement ported from Elm.
- You can find more info about Emish architecture and samples at https://elmish.github.io/
+ You can find more info about Elmish architecture and samples at https://elmish.github.io/
 *)
 
 open Elmish
