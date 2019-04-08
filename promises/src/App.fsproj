@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="2.1.0-alpha-002" />
+    <PackageReference Include="Fable.Browser.Dom" Version="1.0.0-alpha-004" />
+    <PackageReference Include="Fable.Promise" Version="2.0.0-beta-001" />
+    <PackageReference Include="Fable.Fetch" Version="2.0.0-beta-001" />
+    <PackageReference Include="Thoth.Json" Version="3.0.0-beta-005" />
+  </ItemGroup>
+</Project>
