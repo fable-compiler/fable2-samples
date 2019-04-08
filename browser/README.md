@@ -1,6 +1,6 @@
-# Fable 2.1 Minimal App
+# Fable Browser App
 
-This is a simple Fable 2.1 app including an [Elmish](https://elmish.github.io/) counter with as little configuration as possible. If you want to see a more complex app including commonly used F# tools like Paket or Fake, check [the Fulma demo](https://github.com/MangelMaxime/fulma-demo).
+This is a simple Fable app which draws a grid into a canvas element. 
 
 ## Requirements
 
