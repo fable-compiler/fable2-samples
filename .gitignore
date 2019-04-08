@@ -194,3 +194,5 @@ docs/tools/FSharp.Formatting.svclog
 .ionide
 *.bak
 project.lock.json
+
+browser/yarn\.lock
