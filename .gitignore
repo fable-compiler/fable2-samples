@@ -196,3 +196,5 @@ docs/tools/FSharp.Formatting.svclog
 project.lock.json
 
 browser/yarn\.lock
+
+promises/yarn\.lock
