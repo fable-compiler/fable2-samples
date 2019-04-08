@@ -202,3 +202,7 @@ promises/yarn\.lock
 nodejs/build/
 
 nodejs/yarn\.lock
+
+nodejsbundle/build/App\.js
+
+nodejsbundle/yarn\.lock
