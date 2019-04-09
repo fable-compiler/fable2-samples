@@ -1,0 +1,8 @@
+source https://nuget.org/api/v2
+storage:none
+
+nuget Fable.Core >= 2.1.0-alpha-002
+nuget Fable.Promise
+nuget Fable.Fetch
+nuget Fable.Browser.Dom 1.0.0-alpha-004
+nuget Thoth.Json 
