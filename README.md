@@ -23,3 +23,5 @@ So what do we have here?
 3. **[mocha](https://github.com/fable-compiler/fable2-samples/tree/master/mocha)**, add tests to your Fable projects with the mocha lib! An easy to understand template with an architecture you can reproduce in already existing Fable projects.
 
 4. **[withPaket](https://github.com/fable-compiler/fable2-samples/tree/master/withpaket)**, desperate to add many .NET NuGet packages without conflicts? Let's use paket in your project!
+
+> *Don't forget to read our lovely hand written README file located in each folder! Thanks and have fun!*
