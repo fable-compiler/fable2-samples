@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "fable-splitter src -o build --commonjs",
+    "testApp": "node build/App.js",
+    "pretest": "fable-splitter tests -o build --commonjs",
+    "test": "mocha build -t 10000"    
+  },
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "fable-compiler": "^2.2.0-beta-015",
+    "fable-loader": "^2.1.5",
+    "mocha": "^6.0.2",
+    "fable-splitter": "^2.1.5",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
