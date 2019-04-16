@@ -5,7 +5,7 @@ open Fable.Import
 open Fable.Core
 
 (*
-  First way to interop with our javascript:
+  Example 1: interop with JS functions through F# interfaces
   Create an interface listing all exported functions and members
   Function name must be the same as the one written in the .js file
 *)
@@ -24,9 +24,9 @@ Alert.lib.triggerAlert ("Hey I'm calling my js library from Fable > " + Alert.li
 
 
 (*
-  Second way to interop with our javascript:
+  Example 2: interop with JS functions through F# module functions
   Just create functions as placeholders for our exported members 
-  Put these into a module just to make thing a little bit clearer
+  Put these into an F# module just to make thing a little bit clearer
 *)
 module Canvas = 
   // here we just import a member function from canvas.js called drawSmiley. 
@@ -38,24 +38,26 @@ Canvas.drawBubble "bubble"
 Canvas.drawSmiley "smiley"
 
 (*
-  Third way to interop with a javascript: use a class
+  Example 3: interop with a JS Class
   We need a:
-  1 - a description: an interface which will mimic our js MyClass class
-  2 - a caller: a MyClassType to invoke a new MyClass
-  3 - a glue: a myClassCallInstance that will act as the glue between our lib and MyClassCaller
+  1 - a description: an interface which will mimic our js MyClass class implementation
+  2 - a caller to invoke a new MyClass and call static methods
+  3 - a glue: that will act as the glue between our lib and MyClassCaller
 *)
-type MyClass = // 1
+type MyClassImplementation = // 1
   abstract awesomeInteger: int with get, set
+  abstract isAwesome: unit -> bool
   
-type MyClassCaller = // 2 
+type MyClass = // 2 
   [<Emit("new $0($1...)")>]
-  abstract Create : awesomeInteger:int ->  MyClass //= jsNative  // takes a string parameter and does not return anything
+  abstract Create : awesomeInteger:int ->  MyClassImplementation //= jsNative  // takes a string parameter and does not return anything
+  abstract getPI : unit-> float
 
 [<Import("default", "../public/MyClass.js")>] // 3
-let myClassCallInstance : MyClassCaller = jsNative
+let myClassStatic : MyClass = jsNative
 
 // let's make our object mutable to be able to change its members
-let mutable myObject = myClassCallInstance.Create 40
+let mutable myObject = myClassStatic.Create 40
 
 // using getter
 let whatDoIget = myObject.awesomeInteger // using getter
@@ -64,3 +66,9 @@ Alert.lib.triggerAlert ("Hey I'm calling my js class from Fable. It gives " + (s
 // using setter
 myObject.awesomeInteger <- 42
 Alert.lib.triggerAlert ("Now it's better. It gives " + (string myObject.awesomeInteger))
+
+// calling member function
+Alert.lib.triggerAlert ("Isn't it awesome? " + (string (myObject.isAwesome())))
+
+// call our static function
+Alert.lib.triggerAlert ("PI is " + (string (myClassStatic.getPI())))

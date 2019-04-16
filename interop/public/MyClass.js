@@ -10,6 +10,14 @@ class MyClass {
   set awesomeInteger( newValue ) {
     this._awesomeInteger = newValue;
   }
+
+  isAwesome() {
+    return this._awesomeInteger === 42;
+  }
+
+  static getPI() {
+    return Math.PI;
+  }
 }
 
 export { MyClass as default}
