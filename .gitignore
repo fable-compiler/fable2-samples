@@ -206,3 +206,9 @@ nodejs/yarn\.lock
 nodejsbundle/build/App\.js
 
 nodejsbundle/yarn\.lock
+
+mocha/build/
+
+mocha/yarn\.lock
+
+interopFableFromJS/yarn\.lock
