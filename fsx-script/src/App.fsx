@@ -1,7 +1,8 @@
 #load "../.paket/load/netstandard2.0/main.group.fsx"
 
+// Needed for intellisense in Ionide
 #if INTERACTIVE
-#r "netstandard"
+#r "../packages/dev/NETStandard.Library/build/netstandard2.0/ref/netstandard.dll"
 #endif
 
 (*
@@ -35,7 +36,7 @@ let update (msg:Msg) (model:Model) =
 
 let view (model:Model) dispatch =
 
-  div []
+  div [ ClassName "container" ]
       [ h1 [] [str "Fable fsx sample"]
         button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ]
         div [] [ str (string model) ]
