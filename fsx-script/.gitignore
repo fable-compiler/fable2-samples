@@ -5,3 +5,4 @@ dist/main.js*
 paket-files/
 public/bundle.js
 node_modules/
+packages/
