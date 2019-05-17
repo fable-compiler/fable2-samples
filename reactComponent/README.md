@@ -34,14 +34,16 @@ yarn start
 * Now the fs-react-component is linked to my-app by node_modules
 * Open App.js and add this import
 ```javascript
-import { StandardComponent, FunctionComponent } from 'fs-react-component'
+import { StandardComponent, FunComponent, Fable5FunComponent } from 'fs-react-component'
 ```
 * Then use the component like any other react component
 ```html
     <StandardComponent name="standard" />
-    <FunctionComponent name="function" />
+    <FunComponent name="bare" />
+    <Fable5FunComponent name="Memo Component" />
 ```
 * If you ran `yarn start` in both fs-react-component and my-app you should be able to make changes to index.fs and see them reflected in my-app automatically.
+* See comments in the source about why you might prefer one component type over another.
 * That's it 🎉
 
 ## Publishing
