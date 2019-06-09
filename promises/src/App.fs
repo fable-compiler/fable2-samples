@@ -11,7 +11,7 @@ type PictureInfo = { Url : string }
 
 let window = Browser.Dom.window
 
-// this simple function takes and url, creates an img element and add it to our myDogContainer div created in index.html
+// this simple function takes an url, creates an img element and add it to our myDogContainer div created in index.html
 let showPic url = 
   // make image mutable since we need to mutate it's src field
   let mutable image : Browser.Types.HTMLImageElement = unbox window.document.createElement "img"
