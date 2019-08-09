@@ -4,13 +4,13 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
-    "@babel/core": "^7.3.4",
-    "fable-compiler": "^2.1.12",
-    "fable-loader": "^2.1.5",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
+    "@babel/core": "^7.5.5",
+    "fable-compiler": "^2.3.18",
+    "fable-loader": "^2.1.8",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
