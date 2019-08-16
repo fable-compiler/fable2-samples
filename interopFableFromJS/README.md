@@ -1,6 +1,6 @@
-# Fable Browser App
+# Fable Interop From JavaScript
 
-This is a simple Fable app which draws a grid into a canvas element. 
+This is a simple Fable app which calls F# code from JavaScript code.
 
 ## Requirements
 

@@ -6,7 +6,7 @@
     <Compile Include="Tests.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Fable.Core" Version="3.0.0-beta-002" />
+    <PackageReference Include="Fable.Core" Version="3.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\src\App.fsproj" />
