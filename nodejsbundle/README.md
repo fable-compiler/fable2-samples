@@ -1,6 +1,6 @@
-# Fable Node.js App
+# Fable Node.js Bundled App
 
-This is a simple Fable Node.js app wich is bundled with webpack. It's basically what we need to start working on Serverless functions for instance.
+This is a simple Fable Node.js app which is bundled with webpack. It's basically what we need to start working on Serverless functions for instance.
 
 ## Requirements
 

@@ -1,4 +1,4 @@
-# Fable Node.js App
+# Fable Mocha App
 
 This is a simple Fable Node.js app featuring a mocha test suite.
 
@@ -16,7 +16,7 @@ This is a simple Fable Node.js app featuring a mocha test suite.
 
 ## Building and running the tests
 
-* Build: `npm pretest`
+* Build: `npm run pretest`
 * Run: `npm test`
 
 ## Project structure
