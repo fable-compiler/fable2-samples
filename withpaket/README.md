@@ -19,7 +19,7 @@ Any modification you do to the F# code will be reflected in the web page after s
 
 ## Project structure
 
-### npm/yarn
+### npm
 
 JS dependencies are declared in `package.json`, while `package-lock.json` is a lock file automatically generated.
 
