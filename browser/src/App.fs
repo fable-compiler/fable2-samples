@@ -27,7 +27,7 @@ let gridWidth = float (steps * squareSize)
 myCanvas.width <- gridWidth
 myCanvas.height <- gridWidth
 
-// print the grid size to our debugger consoloe
+// print the grid size to our debugger console
 printfn "%i" steps
 
 // prepare our canvas operations
