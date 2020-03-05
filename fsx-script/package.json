@@ -1,15 +1,15 @@
 {
   "private": true,
   "dependencies": {
-    "@babel/core": "7.4.4",
-    "fable-compiler": "2.3.8",
-    "fable-loader": "2.1.7",
-    "webpack": "4.31.0",
-    "webpack-cli": "3.3.2",
-    "webpack-dev-server": "3.3.1"
+    "@babel/core": "7.8.7",
+    "fable-compiler": "2.4.18",
+    "fable-loader": "2.1.8",
+    "webpack": "4.42.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.10.3"
   },
   "scripts": {
-    "postinstall": "paket restore && paket generate-load-scripts -f netstandard2.0 -t fsx",
+    "postinstall": "dotnet tool restore && dotnet paket restore && dotnet paket generate-load-scripts -f netstandard2.0 -t fsx",
     "start": "webpack-dev-server",
     "build": "webpack -p"
   }

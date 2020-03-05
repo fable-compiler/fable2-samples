@@ -3,7 +3,7 @@ module App
 open Fable.Core.JsInterop
 open Fable.Import
 open Fetch
-open Thoth
+open Thoth.Json
 
 // we get a json from our fetch request with a url field
 // so we create this type to map the json object
@@ -12,7 +12,7 @@ type PictureInfo = { Url : string }
 let window = Browser.Dom.window
 
 // this simple function takes an url, creates an img element and add it to our myDogContainer div created in index.html
-let showPic url = 
+let showPic url =
   // make image mutable since we need to mutate it's src field
   let mutable image : Browser.Types.HTMLImageElement = unbox window.document.createElement "img"
   let container = window.document.getElementById "myDogContainer"
@@ -29,8 +29,8 @@ let getRandomDogImage url =
       // Use Thoth, a F# library to decode the json message
       // the message will come as: {"url":"https://random.dog/580ce3c8-a8bf-48a8-92cc-68d1955c7dc8.jpg"}
       // We tell Thoth to decode this and map the Json to our PictureInfo type.
-      let decoded = Thoth.Json.Decode.Auto.fromString<PictureInfo> (txt, isCamelCase=true)
-      match decoded with 
+      let decoded = Decode.Auto.fromString<PictureInfo> (txt, caseStrategy = CamelCase)
+      match decoded with
       | Ok catURL ->  // everything went well! great!
         let actualDogURL = catURL.Url
         printfn "Woof! Woof! %s" actualDogURL

@@ -1,9 +1,9 @@
 var path = require('path');
 const babelConf = {
-  presets: [ 
+  presets: [
     ["@babel/preset-env", {
       "modules":false,
-      "corejs": 2,
+      "corejs": 3,
       "useBuiltIns": "usage"
     }]
 ]}

@@ -3,15 +3,15 @@ STORAGE: NONE
 RESTRICTION: == netstandard2.0
 NUGET
   remote: https://www.nuget.org/api/v2
-    Fable.Browser.Blob (1.0)
+    Fable.Browser.Blob (1.1)
       Fable.Core (>= 3.0)
-      FSharp.Core (>= 4.5.2)
-    Fable.Browser.Dom (1.0)
-      Fable.Browser.Blob (>= 1.0)
+      FSharp.Core (>= 4.6.2)
+    Fable.Browser.Dom (1.1)
+      Fable.Browser.Blob (>= 1.1)
       Fable.Browser.Event (>= 1.0)
       Fable.Browser.WebStorage (>= 1.0)
       Fable.Core (>= 3.0)
-      FSharp.Core (>= 4.5.2)
+      FSharp.Core (>= 4.6.2)
     Fable.Browser.Event (1.0)
       Fable.Core (>= 3.0)
       FSharp.Core (>= 4.5.2)
@@ -19,9 +19,9 @@ NUGET
       Fable.Browser.Event (>= 1.0)
       Fable.Core (>= 3.0)
       FSharp.Core (>= 4.5.2)
-    Fable.Core (3.0)
-      FSharp.Core (>= 4.5.2)
-    Fable.Elmish (3.0)
+    Fable.Core (3.1.5)
+      FSharp.Core (>= 4.7)
+    Fable.Elmish (3.0.6)
       Fable.Core (>= 3.0)
       FSharp.Core (>= 4.6.2)
     Fable.Elmish.React (3.0.1)
@@ -29,16 +29,16 @@ NUGET
       Fable.Elmish (>= 3.0)
       Fable.React (>= 5.1)
       FSharp.Core (>= 4.6.2)
-    Fable.React (5.2.3)
+    Fable.React (5.3.6)
       Fable.Browser.Dom (>= 1.0)
       Fable.Core (>= 3.0)
-      FSharp.Core (>= 4.6.2)
-    FSharp.Core (4.6.2)
+      FSharp.Core (>= 4.7)
+    FSharp.Core (4.7)
 
 GROUP dev
 RESTRICTION: == netstandard2.0
 NUGET
   remote: https://www.nuget.org/api/v2
-    Microsoft.NETCore.Platforms (2.2.1)
+    Microsoft.NETCore.Platforms (3.1)
     NETStandard.Library (2.0.3)
       Microsoft.NETCore.Platforms (>= 1.1)

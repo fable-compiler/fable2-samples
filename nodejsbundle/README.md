@@ -11,7 +11,7 @@ This is a simple Fable Node.js app which is bundled with webpack. It's basically
 ## Building and running the app
 
 * Install JS dependencies: `npm install`
-* Build Node.js app `npm run-script build`
+* Build Node.js app `npm run build`
 * Try Node.js app `node build/App.js`
 
 ## Project structure

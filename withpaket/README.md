@@ -1,6 +1,6 @@
 # Fable Browser App
 
-This is a simple Fable app which draws a grid into a canvas element. In order to use F# libraries from the .NET NuGet library store we use paket manager wich takes care of handling the downloading and the resolving of conflicts between libraries. 
+This is a simple Fable app which draws a grid into a canvas element. In order to use F# libraries from the .NET NuGet library store we use paket manager wich takes care of handling the downloading and the resolving of conflicts between libraries.
 
 ## Requirements
 
@@ -11,7 +11,7 @@ This is a simple Fable app which draws a grid into a canvas element. In order to
 ## Building and running the app
 
 * Install JS dependencies: `npm install`
-* Install .NET dependencies: `.paket/paket install`
+* Install .NET dependencies: `dotnet paket install`
 * Start Webpack dev server: `npx webpack-dev-server` or `npm start`
 * After the first compilation is finished, in your browser open: http://localhost:8080/
 
@@ -25,7 +25,7 @@ JS dependencies are declared in `package.json`, while `package-lock.json` is a l
 
 ### paket
 
-[Paket](https://fsprojects.github.io/Paket/) 
+[Paket](https://fsprojects.github.io/Paket/)
 
 > Paket is a dependency manager for .NET and mono projects, which is designed to work well with NuGet packages and also enables referencing files directly from Git repositories or any HTTP resource. It enables precise and predictable control over what packages the projects within your application reference.
 
