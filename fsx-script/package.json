@@ -6,7 +6,7 @@
     "fable-loader": "2.1.8",
     "webpack": "4.42.0",
     "webpack-cli": "3.3.12",
-    "webpack-dev-server": "3.11.3"
+    "webpack-dev-server": "4.11.1"
   },
   "scripts": {
     "postinstall": "dotnet tool restore && dotnet paket restore && dotnet paket generate-load-scripts -f netstandard2.0 -t fsx",
