@@ -1,3 +1,5 @@
+**This repository is not maintained anymore as it is using an old version of Fable. [fable3-samples](https://github.com/fable-compiler/fable3-samples) is now the repository which use the currently stable version of Fable (v3)**
+
 # fable2-samples
 
 This is the repository hosting samples for quite all your Fable needs. The best move to start a new Fable project is to clone this repo and then copy/paste one of the projects. There aren't so many files inside each project so that should really be easy.
